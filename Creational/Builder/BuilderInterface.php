@@ -14,5 +14,5 @@ interface BuilderInterface
 
     public function addDoors();
 
-    public function getVehicle(): Vehicle;
+    public function getVehicle();
 }

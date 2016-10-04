@@ -36,7 +36,7 @@ class CarBuilder implements BuilderInterface
         $this->car = new Parts\Car();
     }
 
-    public function getVehicle(): Vehicle
+    public function getVehicle()
     {
         return $this->car;
     }

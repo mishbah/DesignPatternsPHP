@@ -37,7 +37,7 @@ class TruckBuilder implements BuilderInterface
         $this->truck = new Parts\Truck();
     }
 
-    public function getVehicle(): Vehicle
+    public function getVehicle()
     {
         return $this->truck;
     }

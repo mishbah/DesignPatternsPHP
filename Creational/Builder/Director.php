@@ -12,7 +12,7 @@ use DesignPatterns\Creational\Builder\Parts\Vehicle;
  */
 class Director
 {
-    public function build(BuilderInterface $builder): Vehicle
+    public function build(BuilderInterface $builder)
     {
         $builder->createVehicle();
         $builder->addDoors();
