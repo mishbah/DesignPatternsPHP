@@ -20,7 +20,7 @@ class Receiver
     /**
      * @param string $str
      */
-    public function write(string $str)
+    public function write($str)
     {
         if ($this->enableDate) {
             $str .= ' ['.date('Y-m-d').']';
@@ -29,7 +29,7 @@ class Receiver
         $this->output[] = $str;
     }
 
-    public function getOutput(): string
+    public function getOutput()
     {
         return join("\n", $this->output);
     }
