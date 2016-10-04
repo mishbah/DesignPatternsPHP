@@ -13,7 +13,7 @@ class FlyweightFactory implements \Countable
      */
     private $pool = [];
 
-    public function get(string $name): CharacterFlyweight
+    public function get($name)
     {
         if (!isset($this->pool[$name])) {
             $this->pool[$name] = new CharacterFlyweight($name);
@@ -22,7 +22,7 @@ class FlyweightFactory implements \Countable
         return $this->pool[$name];
     }
 
-    public function count(): int
+    public function count()
     {
         return count($this->pool);
     }

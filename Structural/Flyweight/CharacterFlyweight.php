@@ -16,12 +16,12 @@ class CharacterFlyweight implements FlyweightInterface
      */
     private $name;
 
-    public function __construct(string $name)
+    public function __construct($name)
     {
         $this->name = $name;
     }
 
-    public function render(string $font): string
+    public function render($font)
     {
          // Clients supply the context-dependent information that the flyweight needs to draw itself
          // For flyweights representing characters, extrinsic state usually contains e.g. the font.
