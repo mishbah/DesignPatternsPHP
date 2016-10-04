@@ -9,7 +9,7 @@ abstract class Text
      */
     private $text;
 
-    public function __construct(string $text)
+    public function __construct($text)
     {
         $this->text = $text;
     }
