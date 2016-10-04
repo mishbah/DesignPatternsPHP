@@ -19,28 +19,28 @@ class Sql
      */
     private $where = [];
 
-    public function select(array $fields): Sql
+    public function select(array $fields)
     {
         $this->fields = $fields;
 
         return $this;
     }
 
-    public function from(string $table, string $alias): Sql
+    public function from($table, $alias)
     {
         $this->from[] = $table.' AS '.$alias;
 
         return $this;
     }
 
-    public function where(string $condition): Sql
+    public function where($condition)
     {
         $this->where[] = $condition;
 
         return $this;
     }
 
-    public function __toString(): string
+    public function __toString()
     {
         return sprintf(
             'SELECT %s FROM %s WHERE %s',
