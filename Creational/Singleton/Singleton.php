@@ -12,7 +12,7 @@ final class Singleton
     /**
      * gets the instance via lazy initialization (created on first usage)
      */
-    public static function getInstance(): Singleton
+    public static function getInstance()
     {
         if (null === static::$instance) {
             static::$instance = new static();
