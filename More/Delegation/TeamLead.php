@@ -17,7 +17,7 @@ class TeamLead
         $this->junior = $junior;
     }
 
-    public function writeCode(): string
+    public function writeCode()
     {
         return $this->junior->writeBadCode();
     }
