@@ -14,7 +14,7 @@ class Client extends Colleague
         $this->mediator->makeRequest();
     }
 
-    public function output(string $content)
+    public function output($content)
     {
         echo $content;
     }
