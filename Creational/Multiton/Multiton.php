@@ -19,7 +19,7 @@ class Multiton
     {
     }
 
-    public static function getInstance(string $instanceName): Multiton
+    public static function getInstance($instanceName)
     {
         if (!isset(self::$instances[$instanceName])) {
             self::$instances[$instanceName] = new self();
