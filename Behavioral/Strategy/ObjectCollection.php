@@ -22,7 +22,7 @@ class ObjectCollection
         $this->elements = $elements;
     }
 
-    public function sort(): array
+    public function sort()
     {
         if (!$this->comparator) {
             throw new \LogicException('Comparator is not set');

@@ -10,8 +10,12 @@ class IdComparator implements ComparatorInterface
      *
      * @return int
      */
-    public function compare($a, $b): int
+    public function compare($a, $b)
     {
-        return $a['id'] <=> $b['id'];
+        if ($a['id'] == $b['id']) {
+          return 0;
+        }
+
+        return ($a['id'] < $b['id']) ? -1 : 1;
     }
 }

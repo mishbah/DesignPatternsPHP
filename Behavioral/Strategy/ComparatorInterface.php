@@ -10,5 +10,5 @@ interface ComparatorInterface
      *
      * @return int
      */
-    public function compare($a, $b): int;
+    public function compare($a, $b);
 }
