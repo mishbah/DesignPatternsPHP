@@ -4,7 +4,7 @@ namespace DesignPatterns\Creational\SimpleFactory;
 
 class SimpleFactory
 {
-    public function createBicycle(): Bicycle
+    public function createBicycle()
     {
         return new Bicycle();
     }
