@@ -13,5 +13,5 @@ interface EBookInterface
      *
      * @return int[]
      */
-    public function getPage(): array;
+    public function getPage();
 }

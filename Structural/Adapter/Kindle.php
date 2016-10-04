@@ -32,7 +32,7 @@ class Kindle implements EBookInterface
      *
      * @return int[]
      */
-    public function getPage(): array
+    public function getPage()
     {
         return [$this->page, $this->totalPages];
     }

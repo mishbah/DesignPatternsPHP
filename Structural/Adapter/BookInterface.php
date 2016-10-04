@@ -8,5 +8,5 @@ interface BookInterface
 
     public function open();
 
-    public function getPage(): int;
+    public function getPage();
 }

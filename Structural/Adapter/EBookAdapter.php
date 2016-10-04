@@ -40,7 +40,7 @@ class EBookAdapter implements BookInterface
      *
      * @return int
      */
-    public function getPage(): int
+    public function getPage()
     {
         return $this->eBook->getPage()[0];
     }
