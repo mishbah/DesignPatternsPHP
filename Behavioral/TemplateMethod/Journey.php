@@ -32,7 +32,7 @@ abstract class Journey
     /**
      * This method must be implemented, this is the key-feature of this pattern.
      */
-    abstract protected function enjoyVacation(): string;
+    abstract protected function enjoyVacation();
 
     /**
      * This method is also part of the algorithm but it is optional.
@@ -45,12 +45,12 @@ abstract class Journey
         return null;
     }
 
-    private function buyAFlight(): string
+    private function buyAFlight()
     {
         return 'Buy a flight ticket';
     }
 
-    private function takePlane(): string
+    private function takePlane()
     {
         return 'Taking the plane';
     }
@@ -58,7 +58,7 @@ abstract class Journey
     /**
      * @return string[]
      */
-    public function getThingsToDo(): array
+    public function getThingsToDo()
     {
         return $this->thingsToDo;
     }

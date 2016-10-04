@@ -4,7 +4,7 @@ namespace DesignPatterns\Behavioral\TemplateMethod;
 
 class BeachJourney extends Journey
 {
-    protected function enjoyVacation(): string
+    protected function enjoyVacation()
     {
         return "Swimming and sun-bathing";
     }
