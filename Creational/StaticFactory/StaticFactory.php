@@ -13,7 +13,7 @@ final class StaticFactory
      *
      * @return FormatterInterface
      */
-    public static function factory(string $type): FormatterInterface
+    public static function factory($type)
     {
         if ($type == 'number') {
             return new FormatNumber();
