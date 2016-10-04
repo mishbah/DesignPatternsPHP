@@ -21,7 +21,7 @@ class Form implements RenderableInterface
      *
      * @return string
      */
-    public function render(): string
+    public function render()
     {
         $formCode = '<form>';
 

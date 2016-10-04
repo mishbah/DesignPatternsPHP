@@ -9,12 +9,12 @@ class TextElement implements RenderableInterface
      */
     private $text;
 
-    public function __construct(string $text)
+    public function __construct($text)
     {
         $this->text = $text;
     }
 
-    public function render(): string
+    public function render()
     {
         return $this->text;
     }
