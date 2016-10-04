@@ -24,7 +24,7 @@ class DatabaseConfiguration
      */
     private $password;
 
-    public function __construct(string $host, int $port, string $username, string $password)
+    public function __construct($host, $port, $username, $password)
     {
         $this->host = $host;
         $this->port = $port;
@@ -32,22 +32,22 @@ class DatabaseConfiguration
         $this->password = $password;
     }
 
-    public function getHost(): string
+    public function getHost()
     {
         return $this->host;
     }
 
-    public function getPort(): int
+    public function getPort()
     {
         return $this->port;
     }
 
-    public function getUsername(): string
+    public function getUsername()
     {
         return $this->username;
     }
 
-    public function getPassword(): string
+    public function getPassword()
     {
         return $this->password;
     }
