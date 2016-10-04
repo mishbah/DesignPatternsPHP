@@ -17,7 +17,7 @@ class AndSpecification implements SpecificationInterface
         $this->specifications = $specifications;
     }
 
-    public function isSatisfiedBy(Item $item): bool
+    public function isSatisfiedBy(Item $item)
     {
         $satisfied = [];
 

@@ -9,12 +9,12 @@ class Item
      */
     private $price;
 
-    public function __construct(float $price)
+    public function __construct($price)
     {
         $this->price = $price;
     }
 
-    public function getPrice(): float
+    public function getPrice()
     {
         return $this->price;
     }

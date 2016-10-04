@@ -4,5 +4,5 @@ namespace DesignPatterns\Behavioral\Specification;
 
 interface SpecificationInterface
 {
-    public function isSatisfiedBy(Item $item): bool;
+    public function isSatisfiedBy(Item $item);
 }
