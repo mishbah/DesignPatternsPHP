@@ -27,21 +27,21 @@ class State
     /**
      * @param string $state
      */
-    public function __construct(string $state)
+    public function __construct($state)
     {
         self::ensureIsValidState($state);
 
         $this->state = $state;
     }
 
-    private static function ensureIsValidState(string $state)
+    private static function ensureIsValidState($state)
     {
         if (!in_array($state, self::$validStates)) {
             throw new \InvalidArgumentException('Invalid state given');
         }
     }
 
-    public function __toString(): string
+    public function __toString()
     {
         return $this->state;
     }

@@ -32,7 +32,7 @@ class Ticket
         $this->currentState = new State(State::STATE_CLOSED);
     }
 
-    public function saveToMemento(): Memento
+    public function saveToMemento()
     {
         return new Memento(clone $this->currentState);
     }
@@ -42,7 +42,7 @@ class Ticket
         $this->currentState = $memento->getState();
     }
 
-    public function getState(): State
+    public function getState()
     {
         return $this->currentState;
     }
