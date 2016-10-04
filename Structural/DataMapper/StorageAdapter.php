@@ -19,7 +19,7 @@ class StorageAdapter
      *
      * @return array|null
      */
-    public function find(int $id)
+    public function find($id)
     {
         if (isset($this->data[$id])) {
             return $this->data[$id];

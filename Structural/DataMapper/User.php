@@ -14,7 +14,7 @@ class User
      */
     private $email;
 
-    public static function fromState(array $state): User
+    public static function fromState(array $state)
     {
         // validate state before accessing keys!
 
@@ -24,7 +24,7 @@ class User
         );
     }
 
-    public function __construct(string $username, string $email)
+    public function __construct($username, $email)
     {
         // validate parameters before setting them!
 

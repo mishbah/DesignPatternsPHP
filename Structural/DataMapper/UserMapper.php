@@ -27,7 +27,7 @@ class UserMapper
      *
      * @return User
      */
-    public function findById(int $id): User
+    public function findById($id)
     {
         $result = $this->adapter->find($id);
 
@@ -38,7 +38,7 @@ class UserMapper
         return $this->mapRowToUser($result);
     }
 
-    private function mapRowToUser(array $row): User
+    private function mapRowToUser(array $row)
     {
         return User::fromState($row);
     }
