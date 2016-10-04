@@ -22,7 +22,7 @@ class UserObserver implements \SplObserver
     /**
      * @return User[]
      */
-    public function getChangedUsers(): array
+    public function getChangedUsers()
     {
         return $this->changedUsers;
     }

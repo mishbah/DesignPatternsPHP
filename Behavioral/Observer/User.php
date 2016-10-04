@@ -33,7 +33,7 @@ class User implements \SplSubject
         $this->observers->detach($observer);
     }
 
-    public function changeEmail(string $email)
+    public function changeEmail($email)
     {
         $this->email = $email;
         $this->notify();
