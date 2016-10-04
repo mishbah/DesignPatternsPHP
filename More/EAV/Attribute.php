@@ -14,7 +14,7 @@ class Attribute
      */
     private $name;
 
-    public function __construct(string $name)
+    public function __construct($name)
     {
         $this->values = new \SplObjectStorage();
         $this->name = $name;
@@ -28,12 +28,12 @@ class Attribute
     /**
      * @return \SplObjectStorage
      */
-    public function getValues(): \SplObjectStorage
+    public function getValues()
     {
         return $this->values;
     }
 
-    public function __toString(): string
+    public function __toString()
     {
         return $this->name;
     }

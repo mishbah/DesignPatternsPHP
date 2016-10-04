@@ -14,7 +14,7 @@ class Value
      */
     private $name;
 
-    public function __construct(Attribute $attribute, string $name)
+    public function __construct(Attribute $attribute, $name)
     {
         $this->name = $name;
         $this->attribute = $attribute;
@@ -22,7 +22,7 @@ class Value
         $attribute->addValue($this);
     }
 
-    public function __toString(): string
+    public function __toString()
     {
         return sprintf('%s: %s', $this->attribute, $this->name);
     }

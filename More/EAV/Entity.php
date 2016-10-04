@@ -18,7 +18,7 @@ class Entity
      * @param string $name
      * @param Value[] $values
      */
-    public function __construct(string $name, $values)
+    public function __construct($name, $values)
     {
         $this->values = new \SplObjectStorage();
         $this->name = $name;
@@ -28,7 +28,7 @@ class Entity
         }
     }
 
-    public function __toString(): string
+    public function __toString()
     {
         $text = [$this->name];
 
