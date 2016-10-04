@@ -7,9 +7,9 @@ abstract class FactoryMethod
     const CHEAP = 'cheap';
     const FAST = 'fast';
 
-    abstract protected function createVehicle(string $type): VehicleInterface;
+    abstract protected function createVehicle($type);
 
-    public function create(string $type): VehicleInterface
+    public function create($type)
     {
         $obj = $this->createVehicle($type);
         $obj->setColor('black');

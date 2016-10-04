@@ -9,7 +9,7 @@ class CarMercedes implements VehicleInterface
      */
     private $color;
 
-    public function setColor(string $rgb)
+    public function setColor($rgb)
     {
         $this->color = $rgb;
     }

@@ -4,7 +4,7 @@ namespace DesignPatterns\Creational\FactoryMethod;
 
 class ItalianFactory extends FactoryMethod
 {
-    protected function createVehicle(string $type): VehicleInterface
+    protected function createVehicle($type)
     {
         switch ($type) {
             case parent::CHEAP:
