@@ -35,14 +35,14 @@ class RecordProxy extends Record
      * @param string $name
      * @param string  $value
      */
-    public function __set(string $name, string $value)
+    public function __set($name, $value)
     {
         $this->isDirty = true;
 
         parent::__set($name, $value);
     }
 
-    public function isDirty(): bool
+    public function isDirty()
     {
         return $this->isDirty;
     }
