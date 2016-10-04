@@ -13,7 +13,7 @@ class OrderRepository
         3 => ['status' => 'completed'],
     ];
 
-    public static function findById(int $id): Order
+    public static function findById($id)
     {
         if (!isset(self::$orders[$id])) {
             throw new \InvalidArgumentException(sprintf('Order with id %d does not exist', $id));

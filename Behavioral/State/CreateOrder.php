@@ -28,7 +28,7 @@ class CreateOrder implements Order
         throw new \Exception('Can not complete the order which status is created');
     }
 
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->details['status'];
     }

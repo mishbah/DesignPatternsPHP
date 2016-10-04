@@ -14,5 +14,5 @@ interface Order
      */
     public function completeOrder();
 
-    public function getStatus(): string;
+    public function getStatus();
 }

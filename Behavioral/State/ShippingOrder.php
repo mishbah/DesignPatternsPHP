@@ -28,7 +28,7 @@ class ShippingOrder implements Order
         $this->details['updatedTime'] = time();
     }
 
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->details['status'];
     }
