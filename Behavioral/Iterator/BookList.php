@@ -30,17 +30,17 @@ class BookList implements \Countable, \Iterator
         $this->books = array_values($this->books);
     }
 
-    public function count(): int
+    public function count()
     {
         return count($this->books);
     }
 
-    public function current(): Book
+    public function current()
     {
         return $this->books[$this->currentIndex];
     }
 
-    public function key(): int
+    public function key()
     {
         return $this->currentIndex;
     }
@@ -55,7 +55,7 @@ class BookList implements \Countable, \Iterator
         $this->currentIndex = 0;
     }
 
-    public function valid(): bool
+    public function valid()
     {
         return isset($this->books[$this->currentIndex]);
     }

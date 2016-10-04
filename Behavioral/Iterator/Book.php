@@ -14,23 +14,23 @@ class Book
      */
     private $title;
 
-    public function __construct(string $title, string $author)
+    public function __construct($title, $author)
     {
         $this->author = $author;
         $this->title = $title;
     }
 
-    public function getAuthor(): string
+    public function getAuthor()
     {
         return $this->author;
     }
 
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }
 
-    public function getAuthorAndTitle(): string
+    public function getAuthorAndTitle()
     {
         return $this->getTitle().' by '.$this->getAuthor();
     }
