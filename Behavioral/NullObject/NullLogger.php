@@ -4,7 +4,7 @@ namespace DesignPatterns\Behavioral\NullObject;
 
 class NullLogger implements LoggerInterface
 {
-    public function log(string $str)
+    public function log($str)
     {
         // do nothing
     }

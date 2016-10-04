@@ -4,7 +4,7 @@ namespace DesignPatterns\Behavioral\NullObject;
 
 class PrintLogger implements LoggerInterface
 {
-    public function log(string $str)
+    public function log($str)
     {
         echo $str;
     }
