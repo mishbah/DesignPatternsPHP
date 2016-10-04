@@ -27,7 +27,7 @@ abstract class Registry
      *
      * @return void
      */
-    public static function set(string $key, $value)
+    public static function set($key, $value)
     {
         if (!in_array($key, self::$allowedKeys)) {
             throw new \InvalidArgumentException('Invalid key given');
@@ -41,7 +41,7 @@ abstract class Registry
      *
      * @return mixed
      */
-    public static function get(string $key)
+    public static function get($key)
     {
         if (!in_array($key, self::$allowedKeys) || !isset(self::$storedValues[$key])) {
             throw new \InvalidArgumentException('Invalid key given');
