@@ -14,7 +14,7 @@ class WorkerPool implements \Countable
      */
     private $freeWorkers = [];
 
-    public function get(): StringReverseWorker
+    public function get()
     {
         if (count($this->freeWorkers) == 0) {
             $worker = new StringReverseWorker();
@@ -37,7 +37,7 @@ class WorkerPool implements \Countable
         }
     }
 
-    public function count(): int
+    public function count()
     {
         return count($this->occupiedWorkers) + count($this->freeWorkers);
     }
