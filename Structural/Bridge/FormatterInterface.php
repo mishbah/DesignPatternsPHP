@@ -4,5 +4,5 @@ namespace DesignPatterns\Structural\Bridge;
 
 interface FormatterInterface
 {
-    public function format(string $text);
+    public function format($text);
 }
