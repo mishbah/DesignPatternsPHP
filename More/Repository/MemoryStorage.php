@@ -14,7 +14,7 @@ class MemoryStorage
      */
     private $lastId = 0;
 
-    public function persist(array $data): int
+    public function persist(array $data)
     {
         $this->lastId++;
 
@@ -24,7 +24,7 @@ class MemoryStorage
         return $this->lastId;
     }
 
-    public function retrieve(int $id): array
+    public function retrieve($id)
     {
         if (!isset($this->data[$id])) {
             throw new \OutOfRangeException(sprintf('No data found for ID %d', $id));
@@ -33,7 +33,7 @@ class MemoryStorage
         return $this->data[$id];
     }
 
-    public function delete(int $id)
+    public function delete($id)
     {
         if (!isset($this->data[$id])) {
             throw new \OutOfRangeException(sprintf('No data found for ID %d', $id));

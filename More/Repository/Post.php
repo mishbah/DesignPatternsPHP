@@ -19,7 +19,7 @@ class Post
      */
     private $text;
 
-    public static function fromState(array $state): Post
+    public static function fromState(array $state)
     {
         return new self(
             $state['id'],
@@ -33,29 +33,29 @@ class Post
      * @param string $text
      * @param string $title
      */
-    public function __construct($id, string $title, string $text)
+    public function __construct($id, $title, $text)
     {
         $this->id = $id;
         $this->text = $text;
         $this->title = $title;
     }
 
-    public function setId(int $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
 
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
 
-    public function getText(): string
+    public function getText()
     {
         return $this->text;
     }
 
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }

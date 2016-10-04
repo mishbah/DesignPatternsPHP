@@ -23,7 +23,7 @@ class PostRepository
         $this->persistence = $persistence;
     }
 
-    public function findById(int $id): Post
+    public function findById($id)
     {
         $arrayData = $this->persistence->retrieve($id);
 
