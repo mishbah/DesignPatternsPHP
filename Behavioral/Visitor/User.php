@@ -9,12 +9,12 @@ class User implements Role
      */
     private $name;
 
-    public function __construct(string $name)
+    public function __construct($name)
     {
         $this->name = $name;
     }
 
-    public function getName(): string
+    public function getName()
     {
         return sprintf('User %s', $this->name);
     }

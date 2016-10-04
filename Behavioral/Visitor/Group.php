@@ -9,12 +9,12 @@ class Group implements Role
      */
     private $name;
 
-    public function __construct(string $name)
+    public function __construct($name)
     {
         $this->name = $name;
     }
 
-    public function getName(): string
+    public function getName()
     {
         return sprintf('Group: %s', $this->name);
     }

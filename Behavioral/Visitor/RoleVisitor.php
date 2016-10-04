@@ -22,7 +22,7 @@ class RoleVisitor implements RoleVisitorInterface
     /**
      * @return Role[]
      */
-    public function getVisited(): array
+    public function getVisited()
     {
         return $this->visited;
     }
