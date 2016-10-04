@@ -9,12 +9,12 @@ class Webservice implements RenderableInterface
      */
     private $data;
 
-    public function __construct(string $data)
+    public function __construct($data)
     {
         $this->data = $data;
     }
 
-    public function renderData(): string
+    public function renderData()
     {
         return $this->data;
     }
